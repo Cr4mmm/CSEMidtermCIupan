@@ -19,7 +19,7 @@ if (isset($_POST['firstname'], $_POST['age'], $_POST['gender'], $_POST['quote'])
     <meta charset="UTF-8">
     <title>Ciupan, Marc Christian A.</title>
     <style>
-        /* Basic styling for readability */
+        /* CSS for easy readability */
         body { font-family: sans-serif; padding: 20px; background-color: #282c34; color: #abb2bf; }
         .container { max-width: 600px; margin: auto; background: #3c4046; padding: 25px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
         .form-group { margin-bottom: 20px; }
@@ -34,9 +34,8 @@ if (isset($_POST['firstname'], $_POST['age'], $_POST['gender'], $_POST['quote'])
 
 <div class="container">
     <h1>User Registration</h1>
-
+/* form that uses post */
     <form action="" method="POST">
-        
         <div class="form-group">
             <label for="firstname">First Name:</label>
             <input type="text" name="firstname" placeholder="Enter First Name" required>
@@ -64,7 +63,7 @@ if (isset($_POST['firstname'], $_POST['age'], $_POST['gender'], $_POST['quote'])
 
         <button type="submit">Submit Registration</button>
     </form>
-    
+    /* displays the message after submitting */
     <?php
         if ($success_message): ?>
         <div class="success">
